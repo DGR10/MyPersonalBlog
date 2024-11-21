@@ -155,3 +155,43 @@ p {
     display: flex;
     justify-content: center;
 }
+
+#arrow_svg {
+  position: fixed;
+  right: 25px;
+  bottom: 70px;
+  width: 36px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#arrow_svg:hover {
+  transform: translateY(-10%); /* Mueve la imagen hacia arriba un 10% */
+}
+
+.hide {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra vertical */
+  height: 10px; /* Altura de la barra horizontal */
+}
+
+/* Estilo para la pista (track) de la barra */
+::-webkit-scrollbar-track {
+  background: #4d4a48; /* Fondo de la pista */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el thumb (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+  background: #e9c46a; /* Color del thumb */
+  border-radius: 10px; /* Bordes redondeados */
+  
+}
+
+/* Estilo para el thumb al pasar el mouse por encima */
+::-webkit-scrollbar-thumb:hover {
+  background: #e6b843; /* Cambia el color al pasar el mouse */
+}
